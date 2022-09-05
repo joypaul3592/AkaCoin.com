@@ -7,7 +7,7 @@ const MakeAdmin = () => {
     const [users, setUsers] = useState([])
 
     useEffect(() => {
-        fetch('http://localhost:5000/users')
+        fetch('https://aqueous-caverns-01571.herokuapp.com/users')
             .then(res => res.json())
             .then(data => {
                 setUsers(data)

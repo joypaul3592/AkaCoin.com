@@ -9,7 +9,7 @@ const ManageWallet = () => {
     const [walletData, setWalletData] = useState([])
 
     useEffect(() => {
-        fetch('http://localhost:5000/wallet')
+        fetch('https://aqueous-caverns-01571.herokuapp.com/wallet')
             .then(res => res.json())
             .then(data => {
                 console.log(data)
@@ -22,7 +22,7 @@ const ManageWallet = () => {
         const isture = window.confirm('Want to delete this admin')
         if (isture) {
 
-            fetch(`http://localhost:5000/wallet/${id}`, {
+            fetch(`https://aqueous-caverns-01571.herokuapp.com/wallet/${id}`, {
                 method: 'DELETE',
             })
                 .then(res => res.json())

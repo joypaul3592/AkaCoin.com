@@ -9,7 +9,7 @@ const useAdmin = user => {
         console.log(email)
 
         if (email) {
-            fetch(`http://localhost:5000/admin/${email}`)
+            fetch(`https://aqueous-caverns-01571.herokuapp.com/admin/${email}`)
                 .then(res => res.json())
                 .then(data => {
                     console.log(data);

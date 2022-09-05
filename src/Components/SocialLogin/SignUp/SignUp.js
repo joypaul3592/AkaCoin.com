@@ -36,7 +36,7 @@ const SignUp = () => {
         console.log(email)
         const currentUser = { email: email };
         if (email) {
-            fetch(`http://localhost:5000/user/${email}`, {
+            fetch(`https://aqueous-caverns-01571.herokuapp.com/user/${email}`, {
                 method: 'PUT',
                 headers: {
                     'content-type': 'application/json'

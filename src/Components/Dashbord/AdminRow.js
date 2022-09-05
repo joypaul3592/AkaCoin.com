@@ -18,7 +18,7 @@ const AdminRow = ({ requser, index }) => {
         }
         console.log(reqUser)
 
-        fetch(`http://localhost:5000/user/admin/${email}`, {
+        fetch(`https://aqueous-caverns-01571.herokuapp.com/user/admin/${email}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

@@ -8,7 +8,7 @@ const Admin = () => {
     const [admindata, setAdminData] = useState([])
     const [reload, setReload] = useState(false)
     useEffect(() => {
-        fetch(`http://localhost:5000/users`)
+        fetch(`https://aqueous-caverns-01571.herokuapp.com/users`)
             .then(res => res.json())
             .then(data => {
                 console.log(data);
@@ -21,7 +21,7 @@ const Admin = () => {
         const isture = window.confirm('Want to delete this admin')
         if (isture) {
 
-            fetch(`http://localhost:5000/admin/${email}`, {
+            fetch(`https://aqueous-caverns-01571.herokuapp.com/admin/${email}`, {
                 method: 'DELETE',
             })
                 .then(res => res.json())

@@ -16,7 +16,7 @@ const AddWalet = () => {
     const [walletData, setWalletData] = useState([])
 
     useEffect(() => {
-        fetch('http://localhost:5000/wallet')
+        fetch('https://aqueous-caverns-01571.herokuapp.com/wallet')
             .then(res => res.json())
             .then(data => {
                 console.log(data)
@@ -49,7 +49,7 @@ const AddWalet = () => {
 
             try {
 
-                const { data } = await axios.post(`http://localhost:5000/wallet`, walletinfo);
+                const { data } = await axios.post(`https://aqueous-caverns-01571.herokuapp.com/wallet`, walletinfo);
 
                 if (!data.success) {
                     return toast.error(data.error)
@@ -75,7 +75,7 @@ const AddWalet = () => {
 
             try {
 
-                const { data } = await axios.post(`http://localhost:5000/wallet`, walletinfo);
+                const { data } = await axios.post(`https://aqueous-caverns-01571.herokuapp.com/wallet`, walletinfo);
 
                 if (!data.success) {
                     return toast.error(data.error)

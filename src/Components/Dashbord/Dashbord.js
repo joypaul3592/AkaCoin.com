@@ -13,7 +13,7 @@ const Dashbord = () => {
             <div className='   text-center '>
 
                 <div className='py-10 flex items-center h-full max-w-6xl mx-auto px-10 '>
-                    <div data-aos="fade-down" className=' bg-gray-200 rounded-lg w-52 py-7 fixed   mx-auto top-[35%]  '>
+                    <div data-aos="fade-down" className=' bg-gray-200 rounded-lg w-52 py-7 fixed   mx-auto xl:top-[35%] lg:top-[18%] top-[22%]  '>
                         <nav className=''>
 
                             <NavLink

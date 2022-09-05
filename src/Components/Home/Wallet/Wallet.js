@@ -10,7 +10,7 @@ const Wallet = () => {
     const [walletData, setWalletData] = useState([])
 
     useEffect(() => {
-        fetch('http://localhost:5000/wallet')
+        fetch('https://aqueous-caverns-01571.herokuapp.com/wallet')
             .then(res => res.json())
             .then(data => {
                 console.log(data)

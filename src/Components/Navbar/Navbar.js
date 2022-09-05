@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { NavLink } from "react-router-dom";
 import { signOut } from 'firebase/auth';
 import logo from '../../assect/Logo.png'
@@ -10,6 +10,7 @@ import { AiOutlineAntDesign } from "react-icons/ai";
 import auth from '../Firebase/firebase.init';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import useAdmin from '../../Hook/useAdmin';
+import { toast } from 'react-toastify';
 
 
 
@@ -17,6 +18,18 @@ const Navbar = () => {
 
     const [user] = useAuthState(auth);
     const [admin] = useAdmin(user);
+    const [reload, setReload] = useState(false)
+
+    useEffect(() => {
+        console.log('reload')
+    }, [reload])
+
+
+    const handelSignOut = () => {
+        toast('LogOut SuccessFully')
+        signOut(auth)
+        setReload(!reload)
+    }
 
     const menuItem = <>
         <NavLink
@@ -106,7 +119,7 @@ const Navbar = () => {
                                         {
                                             user?.uid ? <button
                                                 style={{ fontFamily: 'Lato' }}
-                                                onClick={() => signOut(auth)}
+                                                onClick={() => handelSignOut()}
                                                 className=" text-sm text-black  hover:bg-gray-200 px-4 py-2 flex items-center"
                                             >
                                                 <BiLogOutCircle className='text-blue-600 mr-2' />
