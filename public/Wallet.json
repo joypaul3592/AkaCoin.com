@@ -1,0 +1,33 @@
+[
+    {
+        "id": 1,
+        "Name" : "AkaWallet",
+        "Text" : "Start exploring blockchain applications in seconds. Trusted by over 1 million users worldwide",
+        "img" : "https://i.ibb.co/TP6Vy3P/Frame-49.png",
+        "color1": "bg-[#1F33D8]",
+        "color2": "bg-[#0C20CB]",
+        "color3": "text-white",
+        "btnColor": "bg-[#EEBC28]"
+    },
+    {
+        "id": 2,
+        "Name" : "AkaSafe",
+        "Text" : "AkaSafe wallet is a secure, decentralized, easy-to-use, and free application to manage more than 10,000 cryptocurrencies.",
+        "img" : "https://i.ibb.co/NC3LK93/Frame-32.png",
+        "color1": "bg-[#FFD456]",
+        "color2": "bg-[#EEBC28]",
+        "color3": "text-[#0E133A]",
+        "btnColor": "bg-[#1F33D8]"
+    },
+    {
+        "id": 3,
+        "Name" : "AkaMask",
+        "Text" : "AkaMask is a decentralized multi-chain digital wallet, dedicated to providing safe and convenient one-stop digital asset management services to users around the world.",
+        "img" : "https://i.ibb.co/Hr0stsT/Frame-22.png",
+        "color1": "bg-[#1F33D8]",
+        "color2": "bg-[#0C20CB]",
+        "color3": "text-white",
+        "btnColor": "bg-[#EEBC28]"
+    }
+
+]
